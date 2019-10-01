@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Draggable - Default functionality</title>
+    <!-- plugin css link start -->
+    <link rel="stylesheet" href="Curved-Text/stylesheets/webfonts.css">
+    <link rel="stylesheet" href="WOW-master/css/animate.css">
+    <link rel="stylesheet" href="tiltedpage_scroll/demo/tiltedpage-scroll.css">
+    <link rel="stylesheet" href="animsition-master/dist/css/animsition.min.css">
+    <!-- plugin css link end -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    
+  </head>
+  <body>
+    <!-- container start -->
+    <div class="container">
+      
+      <h2 class="text-center">Cunter Plugin</h2><hr>
+      <!-- html marup start -->
+      <!-- row start -->
+      <div class="row wow slideInLeft" data-wow-duration=".1s" data-wow-delay=".3s">
+        <!-- col start -->
+        <div class="col-md-4">
+          <!-- single_item start -->
+          <div class="single_item">
+            <span class="counter">1,234,567.00</span>
+          </div>
+          <!-- single_item end -->
+        </div>
+        <!-- col end -->
+        <!-- col start -->
+        <div class="col-md-4">
+          <!-- single_item start -->
+          <div class="single_item">
+            <span>$</span><span class="counter">1.99</span>
+          </div>
+          <!-- single_item end -->
+        </div>
+        <!-- col end -->
+        <!-- col start -->
+        <div class="col-md-4">
+          <!-- single_item start -->
+          <div class="single_item">
+            <span class="counter">12345</span>
+          </div>
+          <!-- single_item end -->
+        </div>
+        <!-- col end -->
+      </div>
+      <!-- row end -->
+      <!-- Curved text start -->
+      <div id="text1"> Hm, looks like the wonderful arctext plugin. </div>
+      <!-- Curved text end -->
+      <!-- tiltedpage_scroll start -->
+      <div class="main">
+        <section class="page1  mb-5">
+          <img src="tiltedpage_scroll/demo/demo1.jpg" alt="">
+        </section>
+        <section class="page2 mb-5">
+          <img src="tiltedpage_scroll/demo/demo2.jpg" alt="">
+        </section>
+        <section class="last-page">
+          <img src="tiltedpage_scroll/demo/demo3.jpg" alt="">
+        </section>
+      </div>
+      <!-- tiltedpage_scroll end -->
+  <!-- animation start -->
+  <div class="animsition padding_top">
+  <a
+  href="index.html"
+  class="animsition-link"
+  data-animsition-out-class="fade-out-right"
+  data-animsition-out-duration="2000"
+>
+  Home
+</a>
+
+<a
+  href="About_us.html"
+  class="animsition-link"
+  data-animsition-out-class="rotate-out"
+  data-animsition-out-duration="500"
+>
+  About Us
+</a>
+</div>
+  <!-- animation end -->
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- html marup end -->
+
+</div>
+  <!-- container end -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- plugin link start -->
+<script src="js/jquery.min.js"></script>
+<!-- counter jq start -->
+<script src="Counter-Up-master/waypoints.min.js"></script>
+<script src="Counter-Up-master/jquery.counterup.min.js"></script>
+<!-- counter jq end -->
+<!-- Curved text jq start -->
+<script src="Curved-Text/javascript/jquery.typorize.min.js"></script>
+<script src="Curved-Text/javascript/jquery.curvedtext.min.js"></script>
+<!-- Curved text jq end -->
+<!-- wow jq start -->
+<script src="WOW-master/dist/wow.min.js"></script>
+<!-- wow jq end -->
+<!-- tiltedpage start -->
+<script src="tiltedpage_scroll/jquery.tiltedpage-scroll.min.js"></script>
+<!-- tiltedpage end -->
+<!-- animation muster start -->
+<script src="animsition-master/dist/js/animsition.min.js"></script>
+<!-- animation muster end -->
+
+
+
+
+
+
+
+
+
+  <!-- plugin link end -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+
+<!-- activation code started -->
+<script>
+$(document).ready(function(){
+  //counter start
+  $('.counter').counterUp({
+    delay: 10,
+    time: 1000
+});
+//cunter end
+//Curved text start
+var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+//Curved text end
+// wow jq start
+ new WOW().init();
+// wow jq end
+//tiltedpage start
+ $(".main").tiltedpage_scroll({
+    sectionContainer: "> section",     // In case you don't want to use <section> tag, you can define your won CSS selector here
+    angle: 50,                         // You can define the angle of the tilted section here. Change this to false if you want to disable the tilted effect. The default value is 50 degrees.
+    opacity: true,                     // You can toggle the opacity effect with this option. The default value is true
+    scale: true,                       // You can toggle the scaling effect here as well. The default value is true.
+    outAnimation: true                 // In case you do not want the out animation, you can toggle this to false. The defaul value is true.
+  });
+//tiltedpage end
+// animaton muster start
+ $(".animsition").animsition({
+    inClass: 'fade-in',
+    outClass: 'fade-out',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+// animaton muster end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
+</script>
+<!-- activation code ending -->
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+body{
+	background: #ddd;
+	padding: 50px 0;
+}
+.container{
+	background: #fff;
+	padding: 50px;
+	border-radius: 10px;
+}
+
+.single_item{
+	font-size: 48px;
+	font-weight: 900;
+	color: #fbc02d;
+	text-align: center;
+}
+#text1
+{
+    margin:           3.0em 0.0em;
+    overflow:         hidden;
+    font:             normal normal normal 2.0em/1.5 'Open Sans Light', sans-serif;
+    color:            #ffffff;
+    background-color: #3fafee;
+}
+.padding_top{
+	padding-top: 200px;
+}
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+.contaienr_ourter p{
+	background: green;
+	color: #fff;
+	font-weight: 700;
+	line-height: 25px;
+	padding: 20px;
+	margin: 0;
+	letter-spacing: 1px;
+}
+
+.custom_owl .owl-nav button.owl-next, .custom_owl .owl-nav button.owl-prev, .custom_owl button.owl-dot {
+    background: transparent;
+    color: red;
+    border: none;
+    padding: 0!important;
+    font: inherit;
+    margin: 0px 5px;
+    font-size: 30px;
+}
+
+/* .slick-prev, .slick-next {
+    
+    width: 27px;
+    height: 30px;
+    cursor: pointer;
+    background: red;
+} */
+.slick-prev:before, .slick-next:before {
+    font-size: 24px;
+    color: #ddd;
+}
+.slick-prev {
+    left: -35px;
+}
+.slick-next {
+    right: -30px;
+}
+.slick-slide img {
+    padding: 10px;
+}
+
+/* isotop start */
+
+
+
+
+/* ---- button ---- */
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1.0em;
+  background: #EEE;
+  border: none;
+  border-radius: 7px;
+  background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
+  color: #222;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-shadow: 0 1px white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #8CF;
+  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+  color: #222;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #28F;
+}
+
+.button.is-checked {
+  color: white;
+  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+}
+
+.button:active {
+  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}
+
+/* ---- button-group ---- */
+
+.button-group {
+  margin-bottom: 20px;
+}
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.button-group .button {
+  float: left;
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 1px;
+}
+
+.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
+.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
+
+/* ---- isotope ---- */
+
+.grid {
+  
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.element-item {
+    position: relative;
+    float: left;
+    width: 33.33%;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+    
+}
+
+.element-item img{
+	width: 100%;
+}
+.element-item > * {
+  margin: 0;
+  padding: 0;
+}
+
+.element-item .name {
+  position: absolute;
+
+  left: 10px;
+  top: 60px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.element-item .symbol {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+}
+
+.element-item .number {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+}
+
+.element-item .weight {
+  position: absolute;
+  left: 10px;
+  top: 76px;
+  font-size: 12px;
+}
+
+
+/* isotop end */
+
+/* round start */
+.rs-control .rs-range-color {
+    background-color: #ea2e1a;
+}
+.rs-control .rs-path-color {
+    background-color: #000000;
+}
+.rs-control .rs-handle {
+    background-color: #e4b88e;
+}
+.rs-control .rs-bg-color {
+    background-color: #ffffff;
+}
+/* round end */
+
+
+/* form start */
+
+/* form end */
