@@ -1,9 +1,3 @@
-
-$(document).ready(function() {
-  
-
-
-
 /**
      * Demo 1
      */
@@ -41,8 +35,6 @@ var $grid = $('.grid').isotope({
     }
   }
 });
-
-
 
 // filter functions
 var filterFns = {
@@ -87,29 +79,3 @@ $('.button-group').each( function( i, buttonGroup ) {
     // form start
     
     // form end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    });
